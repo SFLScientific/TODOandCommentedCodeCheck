@@ -1,0 +1,6 @@
+# action.yml
+name: 'TODO and Commented out code status check'
+description: "Checks for all TODO's and commented out code"
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
