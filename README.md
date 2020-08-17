@@ -2,6 +2,9 @@
 
 Check that looks for existing TODO's and commented out code in a repo
 
+Only checks .py and .md files for TODOs, 
+and only .py for commented out code
+
 TODO's are considered:
  - `todo`
  - `TODO`
