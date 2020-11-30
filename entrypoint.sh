@@ -4,7 +4,7 @@
 passed=1
 
 
-todos=$(egrep --include="*.py" --include="*.md" -rn "XXX|fillme|FILLME|xxx|TODO|todo|to-do|FIXME|fix-me|fixme|fix me|FIX ME|TO DO" *)
+todos=$(egrep --include="*.py" --include="*.md" -rn "\bXXX\b|fillme|FILLME|\bxxx\b|TODO|todo|to-do|FIXME|fix-me|fixme|fix me|FIX ME|TO DO" *)
 case $? in
     0) echo $todos && passed=0;;
     *) echo "No TODO's found";;
